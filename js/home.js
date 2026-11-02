@@ -13,7 +13,7 @@ function renderProjects() {
     <div class="project-card project-card--soon ${p.layout} is-${p.color}" data-cursor="Binnenkort" style="--accent: ${accent(p)}">
       <div class="project-card__media">
         <div class="project-card__zoom">
-          <div class="soon" aria-hidden="true"><span>Coming</span><span>soon</span></div>
+          <div class="soon" aria-hidden="true"><span>Volgt</span><span>snel</span></div>
         </div>
         <span class="project-card__badge mono">${p.category}</span>
       </div>

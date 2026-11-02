@@ -100,7 +100,7 @@
           <div class="cmp__handle" data-cmp-handle role="slider" tabindex="0" aria-label="Schuif tussen versie A en B" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" data-cursor="Sleep">
             <span class="cmp__knob" aria-hidden="true">A ⇆ B</span>
           </div>
-          <button type="button" class="cmp__big-play" data-cmp-bigplay data-cursor="Play"><span aria-hidden="true">▶</span><span class="mono">Speel beide af</span></button>
+          <button type="button" class="cmp__big-play" data-cmp-bigplay data-cursor="Afspelen"><span aria-hidden="true">▶</span><span class="mono">Speel beide af</span></button>
         </div>
 
         <div class="cmp__controls">
@@ -126,6 +126,7 @@
          ===================================================== -->
     <section class="p-story" data-nav="light">
       <p class="p-intro" data-field="intro" data-reveal></p>
+      <p class="mono p-story__label" data-field="storyLabel" hidden></p>
       <div class="p-story__blocks" data-story></div>
     </section>
 
@@ -158,6 +159,7 @@
       </a>
       <div class="p-next__preview" aria-hidden="true"><img data-next-img alt=""></div>
 
+      <dl class="kern" data-kern aria-label="Kerngegevens"></dl>
       <footer class="footer mono">
         <span>© <span data-year>2026</span> Tharmigan Kanapathypillai</span>
         <span>Lokale tijd <span data-clock>--:--</span></span>

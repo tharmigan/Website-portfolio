@@ -30,14 +30,15 @@ function renderProject(p) {
   document.querySelector('[data-nav-bar]').dataset.theme = theme.nav;
 
   const set = (field, value) => document.querySelectorAll(`[data-field="${field}"]`).forEach((el) => { el.textContent = value; });
-  ['title', 'subtitle', 'category', 'year', 'intro'].forEach((f) => set(f, p[f] || ''));
+  ['title', 'subtitle', 'category', 'year', 'intro', 'storyLabel'].forEach((f) => set(f, p[f] || ''));
+  document.querySelector('[data-field="storyLabel"]').hidden = !p.storyLabel;
 
   // Alleen de gegevens tonen die zijn ingevuld
   const meta = [
     ['Type', p.category], ['Jaar', p.year], ['Duur', p.duration],
-    ['Klant', p.client], ['Rol', p.role], ['Tools', (p.tools || []).join(', ')]
+    ['Opdrachtgever', p.client], ['Rol', p.role], ['Tools', (p.tools || []).join(', ')]
   ].filter(([, v]) => v);
-  document.querySelector('[data-meta]').innerHTML = meta.map(([k, v]) => `<div><dt class="mono">${k}</dt><dd>${v}</dd></div>`).join('');
+  document.querySelector('[data-meta]').innerHTML = meta.map(([k, v]) => `<div><dt class="mono">${k}</dt><dd>${App.todo(v)}</dd></div>`).join('');
 
   const story = p.story || [];
   document.querySelector('.p-story').hidden = !p.intro && !story.length;
@@ -75,7 +76,10 @@ function renderProject(p) {
   document.querySelector('[data-story]').innerHTML = story.map((s, i) => `
     <article class="story-block" data-reveal>
       <div class="story-block__label"><span class="mono">0${i + 1}</span><h3>${s.title}</h3></div>
-      <p>${s.text}</p>
+      <div class="story-block__body">
+        <p>${App.todo(s.text)}</p>
+        ${s.specs ? `<dl class="spec">${s.specs.map(([k, v]) => `<div><dt class="mono">${k}</dt><dd>${App.todo(v)}</dd></div>`).join('')}</dl>` : ''}
+      </div>
     </article>`).join('');
 
   document.querySelector('.p-stats').hidden = !(p.stats || []).length;

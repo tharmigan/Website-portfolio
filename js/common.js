@@ -316,6 +316,16 @@ App.initClock = () => {
   document.querySelectorAll('[data-year]').forEach((y) => { y.textContent = new Date().getFullYear(); });
 };
 
+/* ---------- Nog in te vullen tekst: [[...]] wordt gemarkeerd ---------- */
+App.todo = (text) => String(text).replace(/\[\[(.+?)\]\]/g, '<mark class="todo">$1</mark>');
+
+/* ---------- Kerngegevens onderaan de pagina (uit projects.js) ---------- */
+App.initKern = () => {
+  document.querySelectorAll('[data-kern]').forEach((list) => {
+    list.innerHTML = (window.KERN || []).map(([k, v]) => `<div><dt>${k}</dt><dd>${App.todo(v)}</dd></div>`).join('');
+  });
+};
+
 /* ---------- Opstarten ---------- */
 App.boot = () => {
   window.__booted = true;
@@ -327,6 +337,7 @@ App.boot = () => {
   App.initDepth();
   App.initLinks();
   App.initClock();
+  App.initKern();
 };
 
 // Na het bouwen van alle pagina-animaties (i.v.m. pinnen en volgorde)

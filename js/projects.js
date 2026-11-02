@@ -22,7 +22,7 @@ window.KERN = [
   ['Opleiding', 'HBO Creative Business'],
   ['Locatie', 'Inholland Rotterdam'],
   ['Module', 'Media Maker 3'],
-  ['Onderwijseenheid', 'Sharing Media (2426CB113A)'],
+  ['Onderwijseenheid', 'Sharing Media'],
   ['Opdrachtgever', 'Inholland'],
   ['Inleverdatum', '2 november 2026']
 ];

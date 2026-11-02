@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tharmigan Kanapathypillai — Portfolio</title>
+  <meta name="description" content="Portfolio van Tharmigan Kanapathypillai, Creative Business student aan Inholland. Branding, campagnes, content en strategie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add('js', 'is-entering');
+    setTimeout(function () { if (!window.__booted) { var h = document.documentElement; h.classList.remove('is-entering'); h.classList.add('fallback'); } }, 4000);
+  </script>
+</head>
+<body class="page-home">
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="transition" aria-hidden="true"><div class="transition__panel"><span class="transition__mark">TK</span></div></div>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__name">
+      <span class="loader__line"><span>Tharmigan</span></span>
+      <span class="loader__line"><span>Kanapathypillai</span></span>
+    </div>
+    <div class="loader__count"><span data-loader-count>0</span>%</div>
+  </div>
+
+  <!-- =====================================================
+       SECTION: NAVIGATIE
+       ===================================================== -->
+  <header class="nav" data-nav-bar>
+    <nav class="nav__inner" aria-label="Hoofdmenu">
+      <a href="#top" class="nav__logo" aria-label="Tharmigan Kanapathypillai, naar home" data-magnetic>TK<span>.</span></a>
+      <div class="nav__links">
+        <span class="nav__pill" aria-hidden="true"></span>
+        <a class="nav__link" href="#werk"><span class="nav__roll"><span>Werk</span><span aria-hidden="true">Werk</span></span></a>
+        <a class="nav__link" href="#over"><span class="nav__roll"><span>Over mij</span><span aria-hidden="true">Over mij</span></span></a>
+        <a class="nav__link" href="#werkwijze"><span class="nav__roll"><span>Werkwijze</span><span aria-hidden="true">Werkwijze</span></span></a>
+      </div>
+      <a href="#contact" class="nav__cta" data-magnetic><span>Werk met mij</span><i class="nav__cta-icon" aria-hidden="true">↗</i></a>
+      <button class="nav__burger" aria-label="Menu openen" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+      <span class="nav__progress" aria-hidden="true"></span>
+    </nav>
+  </header>
+
+
+  <div class="menu" data-menu>
+    <nav class="menu__links" aria-label="Mobiel menu">
+      <a href="#werk"><span class="mono">01</span>Werk</a>
+      <a href="#over"><span class="mono">02</span>Over mij</a>
+      <a href="#werkwijze"><span class="mono">03</span>Werkwijze</a>
+      <a href="#contact"><span class="mono">04</span>Contact</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- =====================================================
+         SECTION: HERO / INTRODUCTIE
+         ===================================================== -->
+    <section class="hero" id="top" data-nav="light">
+      <div class="hero__top">
+        <p class="mono"><span class="dot"></span>Portfolio — 2026</p>
+        <p class="mono">Tharmigan Kanapathypillai</p>
+        <p class="mono">Creative Business @ Inholland</p>
+      </div>
+
+      <h1 class="hero__title" data-hero-title>
+        <span class="hero__line">Van idee</span>
+        <span class="hero__line hero__line--2"><span class="hero__photo" aria-hidden="true"><img src="assets/tharmigan-face.jpg" alt=""></span>naar</span>
+        <span class="hero__line hero__line--3"><em>impact.</em></span>
+      </h1>
+
+      <a href="#werk" class="hero__sticker" data-cursor="Scroll" aria-label="Scroll naar mijn werk">
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="heroCircle" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+          <text><textPath href="#heroCircle">SCROLL • BEKIJK MIJN WERK • </textPath></text>
+        </svg>
+        <span class="hero__sticker-arrow" aria-hidden="true">↓</span>
+      </a>
+
+      <div class="hero__bottom">
+        <p class="hero__lead">Ik bedenk concepten, bouw merken en maak content die blijft hangen. Druk op play en hoor mijn verhaal.</p>
+
+        <!-- Cassettespeler met mijn podcastfragment -->
+        <div class="reel" data-reel>
+          <audio src="assets/podcast_tharmigan.mp3" preload="metadata" data-reel-audio></audio>
+          <div class="reel__spool" aria-hidden="true"></div>
+          <div class="reel__body">
+            <p class="reel__title">Mijn verhaal, in 60 seconden</p>
+            <div class="reel__track" data-reel-track role="slider" aria-label="Voortgang" aria-valuemin="0" aria-valuemax="60" aria-valuenow="0" tabindex="0">
+              <div class="reel__fill"></div>
+              <div class="reel__knob"></div>
+            </div>
+            <div class="reel__times"><span data-reel-time>0:00</span><span data-reel-duration>1:00</span></div>
+            <button class="reel__play" data-reel-play aria-label="Afspelen">
+              <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+              <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+            </button>
+          </div>
+          <div class="reel__spool" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION: PROJECTEN
+         ===================================================== -->
+    <section class="work" id="werk" data-nav="light">
+      <svg class="work__path" aria-hidden="true">
+        <path class="work__dash" id="workDash" fill="none" stroke="var(--onyx)" stroke-width="1.6" stroke-dasharray="8 10"/>
+        <circle class="work__start" r="9" fill="var(--onyx)"/>
+      </svg>
+      <div class="work__plane" aria-hidden="true">
+        <svg viewBox="0 0 64 48"><path fill="var(--flame)" d="M2 24 62 2 46 46 30 30z"/><path fill="var(--flame-dark)" d="M30 30 62 2 24 40z"/></svg>
+      </div>
+
+      <header class="work__head">
+        <h2 class="section-title" data-split>Geselecteerd <em>werk</em></h2>
+        <div class="work__meta">
+          <p class="mono"><span class="dot"></span>(<span data-project-count>01</span>) online</p>
+          <p class="mono">(<span data-soon-count>05</span>) binnenkort</p>
+        </div>
+      </header>
+
+      <div class="work__grid" data-work-grid>
+        <!-- Wordt gevuld vanuit js/projects.js -->
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION: OVER MIJ
+         ===================================================== -->
+    <section class="about" id="over" data-nav="dark">
+      <div class="about__statement-wrap">
+        <p class="mono about__label">— Over mij</p>
+        <h2 class="about__statement" data-split>Ik maak ideeën die blijven hangen.</h2>
+        <svg class="about__thread" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+          <path pathLength="1" d="M70 20 C 220 140 380 190 540 220 S 760 300 640 380 S 300 470 120 520 S -30 640 160 655 S 900 650 1260 650 S 1520 700 1420 800 S 1150 840 1190 740 S 1330 700 1370 780 S 1300 870 1340 890"/>
+        </svg>
+      </div>
+
+      <div class="about__grid">
+        <!-- TikTok-telefoon: kantelt mee met de muis, dubbelklik voor een hartjesregen -->
+        <div class="about__visual" data-phone-wrap>
+          <div class="phone" data-phone>
+            <div class="phone__screen" data-phone-screen>
+              <img class="phone__bg" src="assets/tharmigan-buggy.jpg" alt="Tharmigan op een buggy in de woestijn" draggable="false">
+              <span class="phone__island" aria-hidden="true"></span>
+              <p class="phone__tabs"><span>Volgend</span><b>Voor jou</b></p>
+
+              <div class="phone__actions">
+                <span class="phone__avatar"><img src="assets/tharmigan-avatar.jpg" alt="" draggable="false"><i aria-hidden="true">+</i></span>
+                <button type="button" class="phone__btn" data-like aria-pressed="false" aria-label="Like">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 4.5 6.7 4.5c2.1 0 3.6 1.1 5.3 3 1.7-1.9 3.2-3 5.3-3 3.7 0 5.8 4 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg>
+                  <span>4,2M</span>
+                </button>
+                <span class="phone__btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.9 2 11.7c0 2.4 1.1 4.6 3 6.2L4 21.5l4.2-1.9c1.2.4 2.5.6 3.8.6 5.5 0 10-3.9 10-8.6S17.5 3 12 3z"/></svg>
+                </span>
+                <span class="phone__btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M13 3l9 8.5-9 8.5v-5c-6 0-9.5 1.8-12 6 .8-6.5 4-11.5 12-12.5V3z"/></svg>
+                </span>
+                <span class="phone__disc" aria-hidden="true"><img src="assets/tharmigan-avatar.jpg" alt="" draggable="false"></span>
+              </div>
+
+              <div class="phone__caption">
+                <b>@tharmiii_</b>
+                <p>Van idee naar impact. Welkom op mijn portfolio <span aria-hidden="true">✦</span> <span class="phone__tags">#creativebusiness #content</span></p>
+                <p class="phone__music mono"><span>♪ origineel geluid — tharmiii_ &nbsp; ♪ origineel geluid — tharmiii_ &nbsp;</span></p>
+              </div>
+              <span class="phone__progress" aria-hidden="true"><i></i></span>
+            </div>
+          </div>
+          <p class="mono phone__hint"><span class="dot"></span><span data-touch-text="Dubbeltik op de video ♥">Dubbelklik op de video ♥</span></p>
+        </div>
+
+        <div class="about__text">
+          <p class="about__lead" data-reveal>20 jaar. Creative Business. <em>150K+ volgers</em> op TikTok.</p>
+          <p class="about__punch" data-reveal>Ik weet wat mensen laat stoppen met scrollen. Dat zet ik in voor merken.</p>
+
+          <a class="tt-card" href="https://www.tiktok.com/@tharmiii_" target="_blank" rel="noopener" data-cursor="Volg" data-reveal>
+            <span class="tt-card__head">
+              <span class="tt-card__logo" aria-hidden="true">♪</span>
+              <span class="tt-card__handle">@tharmiii_</span>
+              <span class="mono tt-card__link">TikTok ↗</span>
+            </span>
+            <span class="tt-card__stats">
+              <span class="tt-stat"><b class="glitch" data-count-up="151.9" data-decimals="1" data-suffix="K">151,9K</b><span class="mono">volgers</span></span>
+              <span class="tt-stat"><b class="glitch" data-count-up="4.2" data-decimals="1" data-suffix="M">4,2M</b><span class="mono">likes</span></span>
+            </span>
+          </a>
+
+          <ul class="about__facts">
+            <li><span class="mono">Leeftijd</span>20 jaar</li>
+            <li><span class="mono">Nu</span>HBO Creative Business — Inholland</li>
+            <li><span class="mono">Afgerond</span>MBO 4 Marketing &amp; Communicatie</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Physics-speelveld: woorden vallen naar beneden en zijn rond te gooien -->
+      <div class="pit" data-pit>
+        <div class="pit__head">
+          <p class="mono"><span class="dot"></span>Waar ik veel van weet</p>
+          <p class="mono pit__hint" data-touch-text="Tik om ze te laten springen ↓">Pak ze vast en gooi ze rond ↓</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION: WERKWIJZE
+         ===================================================== -->
+    <section class="approach" id="werkwijze" data-nav="light">
+      <header class="approach__head">
+        <h2 class="section-title" data-split>Hoe ik <em>werk</em></h2>
+        <p class="approach__intro">Elk project doorloopt vier stappen. Zo ziet een idee er niet alleen goed uit, maar werkt het ook.</p>
+      </header>
+
+      <ol class="steps">
+        <li class="step step--aqua">
+          <div class="step__top"><span class="step__num">01</span><span class="step__shape step__shape--circle" aria-hidden="true"></span></div>
+          <div class="step__body">
+            <h3 class="step__title">Onderzoek</h3>
+            <p class="step__text">Ik duik in de doelgroep, het merk en de markt. Wie wil je bereiken, en waarom zouden ze luisteren?</p>
+            <ul class="step__tags mono"><li>Doelgroep</li><li>Markt</li><li>Merk</li></ul>
+          </div>
+        </li>
+        <li class="step step--flame">
+          <div class="step__top"><span class="step__num">02</span><span class="step__shape step__shape--triangle" aria-hidden="true"></span></div>
+          <div class="step__body">
+            <h3 class="step__title">Concept</h3>
+            <p class="step__text">Van inzicht naar idee. Ik vertaal het onderzoek naar een helder creatief concept met een sterk verhaal.</p>
+            <ul class="step__tags mono"><li>Idee</li><li>Verhaal</li><li>Strategie</li></ul>
+          </div>
+        </li>
+        <li class="step step--lime">
+          <div class="step__top"><span class="step__num">03</span><span class="step__shape step__shape--square" aria-hidden="true"></span></div>
+          <div class="step__body">
+            <h3 class="step__title">Creatie</h3>
+            <p class="step__text">Content, visuals en video die het concept tot leven brengen, afgestemd op elk kanaal.</p>
+            <ul class="step__tags mono"><li>Video</li><li>Content</li><li>Design</li></ul>
+          </div>
+        </li>
+        <li class="step step--onyx">
+          <div class="step__top"><span class="step__num">04</span><span class="step__shape step__shape--arrow" aria-hidden="true">↗</span></div>
+          <div class="step__body">
+            <h3 class="step__title">Resultaat</h3>
+            <p class="step__text">Lanceren, meten en bijsturen. Een goed idee bewijst zich in de cijfers.</p>
+            <ul class="step__tags mono"><li>Lancering</li><li>Data</li><li>Groei</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- =====================================================
+         SECTION: CONTACT + FOOTER
+         ===================================================== -->
+    <section class="contact" id="contact" data-nav="light">
+      <div class="contact__top">
+        <p class="mono"><span class="dot"></span>Contact</p>
+        <p class="mono">Laten we samenwerken</p>
+        <p class="mono">Creative Business @ Inholland</p>
+      </div>
+
+      <h2 class="contact__title" aria-label="Jij plus ik is samen iets maken">
+        <span class="contact__line" data-contact-line>Jij + ik =</span>
+        <span class="contact__line contact__line--2" data-contact-line>
+          <span class="rotator" data-rotator aria-hidden="true">
+            <span>video.</span><span>content.</span><span>merken.</span><span>verhalen.</span><span>impact.</span>
+          </span>
+        </span>
+      </h2>
+
+      <a href="mailto:765150@student.inholland.nl" class="contact__sticker" data-cursor="Mail" aria-label="Stuur een e-mail">
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="contactCircle" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+          <text><textPath href="#contactCircle">SAMENWERKEN • MAIL MIJ • </textPath></text>
+        </svg>
+        <span class="contact__sticker-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <div class="collab">
+        <p class="collab__lead" data-reveal>Heb je een project, opdracht of gewoon een goed idee? Vertel me wat je zoekt, dan kijken we wat we samen kunnen maken.</p>
+
+        <div class="collab__builder" data-reveal>
+          <p class="mono">Waar kan ik je mee helpen? <span class="collab__hint">Kies er een of meer</span></p>
+          <div class="collab__chips" role="group" aria-label="Onderwerpen">
+            <button type="button" class="collab__chip" aria-pressed="false">Video</button>
+            <button type="button" class="collab__chip" aria-pressed="false">Content</button>
+            <button type="button" class="collab__chip" aria-pressed="false">Campagne</button>
+            <button type="button" class="collab__chip" aria-pressed="false">Branding</button>
+            <button type="button" class="collab__chip" aria-pressed="false">Strategie</button>
+            <button type="button" class="collab__chip" aria-pressed="false">Iets anders</button>
+          </div>
+          <a class="collab__cta" href="mailto:765150@student.inholland.nl?subject=Samenwerking" data-collab-cta>
+            <span class="collab__cta-text" data-collab-label>Laten we samenwerken</span>
+            <i aria-hidden="true">↗</i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__bottom">
+        <div class="contact__block">
+          <p class="mono">E-mail</p>
+          <a class="contact__mail" href="mailto:765150@student.inholland.nl" data-cursor="Mail">765150@student.inholland.nl</a>
+        </div>
+        <div class="contact__block">
+          <p class="mono">Socials</p>
+          <ul class="socials">
+            <li><a href="https://www.instagram.com/_tharmii_" target="_blank" rel="noopener">Instagram <span class="mono">@_tharmii_</span> ↗</a></li>
+            <li><a href="https://www.tiktok.com/@tharmiii_" target="_blank" rel="noopener">TikTok <span class="mono">@tharmiii_</span> ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__mark" aria-hidden="true">Tharmigan</p>
+        <div class="footer__row mono">
+          <span>© <span data-year>2026</span> Tharmigan Kanapathypillai</span>
+          <span>Lokale tijd <span data-clock>--:--</span></span>
+          <a href="#top">Terug naar boven ↑</a>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
